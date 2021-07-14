@@ -497,7 +497,7 @@ footer p {
   border-radius: 2.5rem;
   border:none;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  margin-bottom:20px
+  margin-bottom:1rem
 }
 .btn-login {
   background: #FFFFFF;
