@@ -649,3 +649,31 @@ footer p {
   z-index: 2;
   line-height:36px;
 }
+.table-labyweb th {font-size:0.875rem; font-weight:normal; color:#222; 
+  background-color:#FCFCFC; vertical-align: middle;}
+.table-labyweb td {font-size:0.875rem; font-weight:normal; color:#828282}
+.form-control {font-size:0.875rem}
+.form-control::-webkit-input-placeholder {
+  color: #BFBFBF;
+  opacity: 1;
+}
+
+.form-control::-moz-placeholder {
+  color: #BFBFBF;
+  opacity: 1;
+}
+
+.form-control:-ms-input-placeholder {
+  color: #BFBFBF;
+  opacity: 1;
+}
+
+.form-control::-ms-input-placeholder {
+  color: #BFBFBF;
+  opacity: 1;
+}
+
+.form-control::placeholder {
+  color: #BFBFBF;
+  opacity: 1;
+}
