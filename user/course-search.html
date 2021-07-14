@@ -34,13 +34,13 @@
 		<header id="header"></header>
 		<main role="main">
             <!-- location -->
-            <div class="bg-nav">
+            <div class="bg-nav mb-5">
                 <div class="container d-flex justify-content-between">
                     <span class="mt-2">4개의 강좌가 있습니다.</span>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                      </form>
+                    <div class="custom-search">
+                        <input type="text" class="custom-search-input" placeholder="강좌 찾기">
+                        <a href="" class="custom-search-button" type="submit"><i class="fas fa-search"></i></a>  
+                    </div>
                 </div>
                 <div class="container d-flex justify-content-between">
                     <div class="mt-2">
@@ -64,7 +64,7 @@
                 <div class="container">
                     <div class="row">
                         <!-- 강좌 썸네일 제목 수강신청 버튼-->
-                        <div class="col-lg-9 mt-5">
+                        <div class="col-lg-9">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="card mb-5">
@@ -152,9 +152,8 @@
                         </div>
                         <!--// 강좌 썸네일 제목 수강신청 버튼-->
                         <!-- 좌측 강좌 정보-->
-                        <div class="col-lg-3 mt-5">
-                            <h6>빠른 검색</h6><hr>
-                            <h6 class="mb-2">년도 구분</h6>
+                        <div class="col-lg-3">
+                            <h6 class="mb-5">년도 구분</h6>
                             <div class="list-group" id="list-tab" role="tablist">
                                 <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">2021</a>
                                 <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">2020</a>
