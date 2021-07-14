@@ -69,7 +69,7 @@
                                 <div class="col-md-4">
                                     <div class="card mb-5">
                                         <div class="card-img2"><!-- img size w:298 h:162-->
-                                            <div class="card-img2-label">등록마감 <i class="fas fa-lock px-1"></i></div>
+                                            <div class="card-img2-label">등록마감 <span class="px-1"><i class="fas fa-lock"></i></span></div>
                                         </div>
                                         <div class="card-body">
                                             <div class="p-3">
@@ -92,7 +92,7 @@
                                 <div class="col-md-4">
                                     <div class="card-hover mb-5">
                                         <div class="card-img2"><!-- img size w:298 h:162-->
-                                            <div class="card-img2-label"><i class="fas fa-lock px-1"></i></div>
+                                            <div class="card-img2-label"><span class="px-1"><i class="fas fa-lock"></i></span></div>
                                         </div>
                                         <div class="card-body"> 
                                             <div class="p-3">
@@ -152,19 +152,20 @@
                         </div>
                         <!--// 강좌 썸네일 제목 수강신청 버튼-->
                         <!-- 좌측 강좌 정보-->
-                        <div class="col-lg-3 course-info mt-5">
-                            <ul class="list-group mb-3">
-                                <li class="list-group-item active" aria-current="true">강좌 번호</li>
-                                <li class="list-group-item">COS0000000001</li>
-                            </ul>
-                            <ul class="list-group mb-3">
-                                <li class="list-group-item active" aria-current="true">사용 기간</li>
-                                <li class="list-group-item">2021.06.01 ~ 2021.08.31</li>
-                            </ul>
-                            <ul class="list-group mb-3">
-                                <li class="list-group-item active" aria-current="true">승인 방식</li>
-                                <li class="list-group-item">자동승인</li>
-                            </ul>
+                        <div class="col-lg-3 mt-5">
+                            <h6 class="ml-1">빠른 검색</h6><hr>
+                            <h6 class="ml-1">년도 구분</h6>
+                            <nav class="nav flex-column nav-pills">
+                                <a class="nav-link active" href="#">2021년</a>
+                                <a class="nav-link" href="#">2020년</a>
+                                <a class="nav-link disabled" href="#">2019년</a>
+                            </nav>
+                            <div class="list-group" id="list-tab" role="tablist">
+                                <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">Home</a>
+                                <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">Profile</a>
+                                <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">Messages</a>
+                                <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">Settings</a>
+                            </div>
                         </div>
                         <!--// 좌측 강좌 정보-->
                     </div>
