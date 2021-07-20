@@ -147,6 +147,7 @@ a:not([href]):not([class]):hover {
   font-size: 1.875rem;
 }
 .text-s {font-size: 0.875rem; color:#828282;}
+.text-xs {font-size: 0.75rem; color:#828282;}
 .text-blue {color:#687CFF}
 
 .absolute-center {
@@ -408,6 +409,46 @@ footer p {
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+.btn-red {
+  color: #fff;
+  background-color: #EB5757;
+  border-color: #EB5757;
+}
+
+.btn-red:hover {
+  color: #fff;
+  background-color: #D33131;
+  border-color: #D33131;
+}
+
+.btn-red:focus,
+.btn-red.focus {
+  color: #fff;
+  background-color: #D33131;
+  border-color: #D33131;
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn-red.disabled,
+.btn-red:disabled {
+  color: #fff;
+  background-color: #EB5757;
+  border-color: #EB5757;
+}
+
+.btn-red:not(:disabled):not(.disabled):active,
+.btn-red:not(:disabled):not(.disabled).active,
+.show > .btn-primary.dropdown-toggle {
+  color: #fff;
+  background-color: #EB5757;
+  border-color: #EB5757;
+}
+
+.btn-red:not(:disabled):not(.disabled):active:focus,
+.btn-red:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.1);
+}
 
 .btn-light-laby {
   color: #828282;
@@ -552,10 +593,12 @@ footer p {
   text-align:center;
 }
 
-.course-thumbnail {width:1060px; height:400px; background:url(../images/course/bg-course-info.png) no-repeat 0 20px}
-.course-thumbnail-img {width:95%; height:240px; border: 2px solid #FFFFFF;
+.course-thumbnail {width:100%; height:auto; margin-bottom:50px; background:url(../images/course/bg-course-info.png) no-repeat 0 20px}
+.course-thumbnail-img {width:100%; height:240px; border: 2px solid #FFFFFF;
   background-color: #e5e5e5;
   filter: drop-shadow(0px 0px 15px rgba(0, 0, 0, 0.1));}
+.course-thumbnail-img-lg {width:100%; height:480px; border: 2px solid #FFFFFF;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); margin-bottom:20px}
 .course-thumbnail-card {
     position: relative;
     display: -ms-flexbox;
