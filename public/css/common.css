@@ -535,6 +535,19 @@ footer p {
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
 
+.btn-img-more {
+  width: 60px;
+  height: 60px;
+  background: url("../images/button/more.png") no-repeat;
+  display:inline-block;
+  transition: color 0.15s ease-in-out, background-image 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-img-more:hover {
+  background: url("../images/button/more-hover.png") no-repeat;
+  cursor: pointer;
+}
+
 .badge-onair {border: 1px solid #EB5757;
   box-sizing: border-box;
   border-radius: 4px;
