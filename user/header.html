@@ -22,8 +22,49 @@
 					<li class="nav-item">
 						<a class="nav-link" href="#">라이브 <span class="badge-onair">OnAir</span></a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="course-list.html">나의강좌</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link" id="mycourse" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">
+							나의 강좌
+						</a>
+						<!-- dropdown -->
+						<div class="dropdown-menu p-3" aria-labelledby="mycourse" style="width: 500px;">
+							<div class="d-flex justify-content-between mb-2">
+								<span class="text-s">나의 강좌</span>
+								<a href="course-list.html" class="btn btn-light-laby btn-xs">전체보기</a>
+							</div>
+							<div class="dropdown-divider"></div>
+							<table>
+								<tr>
+									<td class="text-center py-2"><img src="../public/images/common/thumbnail.png" alt="..." style="width:100px; height:60px;" class="img-thumbnail"></td>
+									<td class="pt-3 pl-3">
+										<a href="">세상을 바꾸는 빅데이터</a>
+										<p class="text-s">고3 > 수학 > 미적분</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center py-2"><img src="../public/images/common/thumbnail.png" alt="..." style="width:100px; height:60px;" class="img-thumbnail"></td>
+									<td class="pt-3 pl-3">
+										<a href="">데이터를 통해 스스로 학습하는 머신러닝 배우..</a>
+										<p class="text-s">2021 > 인공지능 > 데이터사이언스</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center py-2"><img src="../public/images/common/thumbnail.png" alt="..." style="width:100px; height:60px;" class="img-thumbnail"></td>
+									<td class="pt-3 pl-3">
+										<a href="">세상을 바꾸는 빅데이터</a>
+										<p class="text-s">고3 > 수학 > 미적분</p>
+									</td>
+								</tr>
+								<tr>
+									<td class="text-center py-2"><img src="../public/images/common/thumbnail.png" alt="..." style="width:100px; height:60px;" class="img-thumbnail"></td>
+									<td class="pt-3 pl-3">
+										<a href="">데이터를 통해 스스로 학습하는 머신러닝 배우..</a>
+										<p class="text-s">2021 > 인공지능 > 데이터사이언스</p>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<!--// dropdown -->
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="course-list2.html">강좌관리</a>
