@@ -149,7 +149,7 @@ a:not([href]):not([class]):hover {
 .text-s {font-size: 0.875rem; color:#828282;}
 .text-xs {font-size: 0.75rem; color:#828282;}
 .text-blue {color:#687CFF}
-
+.text-mute {color:#dadada}
 .absolute-center {
   position: absolute;
   left: 50%;
@@ -831,4 +831,9 @@ footer p {
   text-decoration: none;
   outline: 0;
   opacity: 1;
+}
+/* 달력검색 */
+#input-start,
+#input-end {
+  background: url(../images/icon/calendar.png) no-repeat 95px 50% #fff;
 }
