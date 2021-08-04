@@ -353,10 +353,15 @@ footer p {
 }
 .btn-xs,
 .btn-group-xs > .btn {
-  padding: 0.25rem 0.5rem 0.375rem 0.5rem;
+  padding: 0.125rem 0.375rem;
   font-size: 0.75rem;
-  line-height: 1.2;
-  border-radius: 0.2rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+.btn-xs + .dropdown-toggle-split,
+.btn-group-xs > .btn + .dropdown-toggle-split {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
 }
 .btn-icon img, .btn-icon span {display:inline-block; vertical-align: middle; margin-bottom:1px;}
 .btn-icon span {margin-right:0.5rem}
