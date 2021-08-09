@@ -301,11 +301,16 @@ footer p {
   font-size: 3.5rem;
   }
 }
-.card {transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+.card, .card-list {transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
   cursor: pointer;}
 .card:hover {
   box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
   border:1px solid #687CFF;
+}
+.card-list {background-color: #FDFDFD; border:1px solid #EFEFEF; border-radius:10px;}
+.card-list:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  border:1px solid #4DD1B9;
 }
 .card-text {
   width:100%; height:55px; text-align:left;
@@ -318,6 +323,7 @@ footer p {
 }
 .card-img2 {width:100%; height:162px; background:url(../images/common/noimage.png) no-repeat #F9FAFB 50% 50%; position:relative}
 .card-img2-label {position:absolute; right:0; bottom:5px; padding:5px; margin-left:2px; background: rgba(0, 0, 0, 0.3); font-size:0.75rem; color:#fff}
+
 .progress-laby {
   position:absolute; left:0; bottom:0px; width:100%; height:5px;}
 .progress-bg-laby {
@@ -486,6 +492,47 @@ footer p {
 .btn-light-laby:not(:disabled):not(.disabled):active:focus,
 .btn-light-laby:not(:disabled):not(.disabled).active:focus,
 .show > .btn-light-laby.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(104, 124, 255, 0.2);
+}
+
+.btn-point {
+  color: #fff;
+  background-color: #4DD1B9;
+  border-color: #4DD1B9;
+}
+
+.btn-point:hover {
+  color: #fff;
+  background-color: #20B99D;
+  border-color: #20B99D;
+}
+
+.btn-point:focus,
+.btn-point.focus {
+  color: #000;
+  background-color: #20B99D;
+  border-color: #20B99D;
+  box-shadow: 0 0 0 0.2rem rgba(104, 124, 255, 0.2);
+}
+
+.btn-point.disabled,
+.btn-point:disabled {
+  color: #828282;
+  background-color: #e5e5e5;
+  border-color: #e5e5e5;
+}
+
+.btn-point:not(:disabled):not(.disabled):active,
+.btn-point:not(:disabled):not(.disabled).active,
+.show > .btn-point.dropdown-toggle {
+  color: #fff;
+  background-color: #20B99D;
+  border-color: #01A88A;
+}
+
+.btn-point:not(:disabled):not(.disabled):active:focus,
+.btn-point:not(:disabled):not(.disabled).active:focus,
+.show > .btn-pointy.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(104, 124, 255, 0.2);
 }
 
