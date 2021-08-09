@@ -856,3 +856,7 @@ footer p {
 #input-end {
   background: url(../images/icon/calendar.png) no-repeat 95px 50% #fff;
 }
+
+.table-hover-laby tbody tr:hover {
+  background-color:#F5F6FF; cursor:pointer
+}
