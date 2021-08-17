@@ -47,7 +47,7 @@
                 </div>
             </div>
             <!--// location -->
-            <div class="d-flex justify-content-between" style="margin:0 auto">
+            <div class="d-flex justify-content-between" style="margin:0 auto"> 
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-9 course-thumbnail">
@@ -68,7 +68,14 @@
                                             <div class="input-group mb-3">
                                                 <input type="text" class="form-control" placeholder="데이터를 통해 스스로 학습하는 머신러닝 배우기 2021년 8월 1주차" aria-describedby="basic-addon2">
                                                 <div class="input-group-append">
-                                                  <a href="" class="btn btn-light-laby" id="basic-addon2"><i class="fas fa-check"></i> 적용</a>
+                                                    <a href="" class="btn btn-light-laby disabled" id="basic-addon2"><i class="fas fa-check"></i> 적용</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="input-group mb-3">
+                                                <input type="text" class="form-control" placeholder="데이터를 통해 스스로 학습하는 머신러닝 배우기 2021년 8월 1주차" aria-describedby="basic-addon2">
+                                                <div class="input-group-append">
+                                                    <a href="" class="btn btn-light-laby" id="basic-addon2"><i class="fas fa-check"></i> 적용</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -92,7 +99,10 @@
                             </div>
                             <!-- 2 첨부파일 -->
                             <div class="mb-5">
-                                <div class="mb-4"><h5><img src="../public/images/icon/icon24-course-file.png" alt="" class="mb-2" /> 첨부파일</h5></div>
+                                <div class="mb-4 d-flex justify-content-between">
+                                    <h5><img src="../public/images/icon/icon24-course-file.png" alt="" /> 첨부파일</h5>
+                                    <a href="" class="btn btn-light-laby"><i class="far fa-plus-square"></i> 첨부파일 추가</a>
+                                </div>
                                 <div class="d-flex justify-content-between my-3">
                                     <ul>
                                         <li><a href="">bigdata-20210123.pdf</a></li>
@@ -238,13 +248,13 @@
                                             </div>
                                         </div>
                                         <div class="w-100 text-right">
-                                            <a href="" class="btn btn-light-laby btn-xs"><i class="fas fa-check"></i> 적용</a>
+                                            <a href="" class="btn btn-light-laby"><i class="fas fa-check"></i> 적용</a>
                                         </div>
                                     </div>
                                     <!--// 달력검색 -->
                                 </li>
                             </ul>
-                            <ul class="list-group mb-3">
+                            <ul class="list-group mb-5">
                                 <li class="list-group-item active d-flex justify-content-between" aria-current="true">
                                     <span>승인 방식</span>
                                 </li>
@@ -258,10 +268,45 @@
                                         <label class="form-check-label" for="ok2">수동</label>
                                     </div>
                                     <div class="w-100 text-right">
-                                        <a href="" class="btn btn-light-laby btn-xs"><i class="fas fa-check"></i> 적용</a>
+                                        <a href="" class="btn btn-light-laby"><i class="fas fa-check"></i> 적용</a>
                                     </div>
                                 </li>
                             </ul>
+
+                            <h6 class="mb-3">대분류 수정하기</h6>
+                            <div class="listsch-group mb-4">
+                                <a class="listsch-group-item listsch-group-item-action" href="#">
+                                    <span>빅데이터</span>
+                                    <i class="fas fa-check d-none"></i>
+                                </a>
+                                <a class="listsch-group-item listsch-group-item-action active" href="#">
+                                    <span>데이터사이언스</span>
+                                    <i class="fas fa-check"></i>
+                                </a>
+                                <a class="listsch-group-item listsch-group-item-action" href="#">
+                                    <span>사이버시큐리티</span>
+                                    <i class="fas fa-check d-none"></i>
+                                </a>
+                            </div>
+                            <h6 class="mb-3">상세분류 수정하기</h6>
+                            <div class="listsch-group">
+                                <a class="listsch-group-item listsch-group-item-action active" href="#">
+                                    <span>Hello AI World</span>
+                                    <i class="fas fa-check"></i>
+                                </a>
+                                <a class="listsch-group-item listsch-group-item-action" href="#">
+                                    <span>데이터사이언스</span>
+                                    <i class="fas fa-check d-none"></i>
+                                </a>
+                                <a class="listsch-group-item listsch-group-item-action" href="#">
+                                    <span>빅데이터</span>
+                                    <i class="fas fa-check d-none"></i>
+                                </a>
+                            </div>
+                            <div class="w-100 text-right">
+                                <a href="" class="btn btn-light-laby"><i class="fas fa-check"></i> 적용</a>
+                            </div>
+
                         </div>
                         <!--// 우측 강좌 정보-->
                     </div>
