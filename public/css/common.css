@@ -685,7 +685,7 @@ footer p {
   mix-blend-mode: overlay;
   border-radius: 2.5rem;
   height: 2.5rem;
-  line-height:2.5rem;
+  line-height:2rem;
   text-align:center;
   margin-bottom:20px
 }
