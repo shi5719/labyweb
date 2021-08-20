@@ -910,3 +910,55 @@ footer p {
 .w-40 {
   width: 40% !important;
 }
+
+/* paging */
+.paging-labyweb {
+  text-align: center;
+  width: 100%;
+  clear: both;
+}
+
+.paging-labyweb .current {
+  padding: 6px 10px;
+  margin: 3px;
+  color: #687CFF;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.paging-labyweb .page {
+  padding: 0 7px 2px 7px;
+  margin: 3px;
+  color: #828282;
+  font-weight: normal;
+}
+.paging-labyweb .pageUpDown {
+  padding: 2px 7px;
+  border: 1px solid #dddddd;
+  color: #828282;
+  margin: 2px;
+  border-radius: 3px;
+}
+.paging-labyweb a {
+  border: 0px;
+  color: #828282;
+}
+.paging-labyweb a:hover {
+  text-decoration: none;
+  color: #333;
+}
+
+.paging-labyweb .page:hover {
+  background: none;
+  color: #333;
+}
+.paging-labyweb .pageUpDown:hover {
+  background: #f5f5f5;
+}
+.paging-labyweb .pageUpDownDisable {
+  padding: 0 7px 2px 7px;
+  border: 1px solid #e7e7e7;
+  color: #828282;
+  margin: 1px;
+  border-radius: 3px;
+  cursor: not-allowed;
+}
