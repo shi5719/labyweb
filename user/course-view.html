@@ -43,7 +43,7 @@
                         <i class="fas fa-chevron-right" style="margin-top:10px; color:#BDBDBD"></i>
                         <a class="nav-link active" href="#">Hello AI World</a>
                     </nav>
-                    <a href="" type="button" class="btn btn-light-laby"><i class="fas fa-chevron-left"></i> 검색결과</a>
+                    <a href="" class="btn btn-light-laby"><i class="fas fa-chevron-left"></i> 검색결과</a>
                 </div>
             </div>
             <!--// location -->
@@ -56,7 +56,7 @@
                                 <!--<div class="course-thumbnail-img-lg">
                                     <img src="../public/images/common/thumbnail.png" class="d-block w-100">
                                 </div>-->
-                                <div class="video-wrap">
+                                <div class="video-wrap mb-2">
                                     <div class="video">
                                       <iframe width="100%" height="400px"  src="https://www.youtube.com/embed/0pThnRneDjw" frameborder="0" gesture="media" allowfullscreen></iframe>
                                     </div>
@@ -67,11 +67,29 @@
                                     <div>
                                         <a href="" class="btn round btn-red mr-1"><i class="fas fa-heart"></i> 123</a>
                                         <a href="" class="btn round btn-light-laby mr-1">크게보기</a>
-                                        <a href="" class="btn round btn-light-laby mr-1">공유하기</a>
+                                        <!-- 공유하기 -->
+                                        <div class="dropdown d-inline">
+                                            <a href="" class="btn round btn-light-laby mr-1" id="dropdown-share" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">공유하기</a>
+                                            <div class="dropdown-menu" style="width:360px" aria-labelledby="dropdown-share">
+                                                <form class="px-3 py-2">
+                                                    <div class="text-blue mb-2">공유하기</div>
+                                                    <div class="form-group">
+                                                        <input type="text" class="form-control" placeholder="www.la241.com" >
+                                                    </div>
+                                                    <div class="form-group m-0">
+                                                        <div class="text-right">
+                                                            <a href="" class="btn btn-light-laby btn-xs"><i class="fas fa-check"></i> 복사</a>
+                                                            <a href="" class="btn btn-light-laby btn-xs">취소</a>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <!--// 공유하기 -->
                                     </div>
                                     <div class="text-s">
-                                        <span class="mr-3">2021.06.01</span>
-                                        <span><i class="fas fa-eye"></i> 2345</span>
+                                        <div class="d-lg-inline-block ">2021.06.01</div>
+                                        <div class="d-lg-inline-block "><i class="fas fa-eye"></i> 2345</div>
                                     </div>
                                 </div>
                                 <!--// btn 등록일 조회수 -->
@@ -86,7 +104,7 @@
                                             <div class="input-group">
                                                 <input type="text" class="form-control" placeholder="댓글 추가하기" aria-label="댓글 추가하기" aria-describedby="myreply">
                                                 <div class="input-group-append">
-                                                    <a href="" class="btn btn-light-laby btn-sm" type="button" id="myreply">댓글 등록</a>
+                                                    <a href="" class="btn btn-light-laby btn-sm" id="myreply">댓글 등록</a>
                                                 </div>
                                             </div>
                                         </div>
