@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,user-scalable=no" />
+		<title>LABYWEB admin</title>
+		<!-- CSS -->
+		<link rel="stylesheet" href="../public/vendor/bootstrap-4.5.3/css/bootstrap.css" type="text/css"/> <!-- 부트스트랩 -->
+		<link rel="stylesheet" href="../public/vendor/fontawesome-5.15.1/css/all.css"/> <!--폰트 -->
+		<link rel="stylesheet" href="../public/css/common.css" type="text/css" /> <!-- 공통 -->
+		<!-- JS -->
+		<script src="../public/js/popper.min.js" type="text/javascript"></script>
+		<script src="../public/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+		<script src="../public/js/jquery-3.5.1.js"></script>
+		<script src="../public/vendor/bootstrap-4.5.3/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="https://kit.fontawesome.com/7cff5a815e.js" crossorigin="anonymous"></script>
+		<style>
+			html {height: 100%;}
+			html, body {height: 100%;min-height: 100% !important;}
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-light bg-light">
+			<a class="navbar-brand" href="index.html">LABY University</a>
+			<!-- admin info -->
+			<div class="dropdown">
+				<a class="btn text-s" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					<img src="../public/images/icon/user.png" class="mr-1" />
+					<span>홍길동 (honggildong-1234)</span>
+				</a>
+				<ul class="dropdown-menu dropdown-menu-xl-right text-s p-3" aria-labelledby="dropdownMenuLink">
+					<li class="mb-1">
+						<i class="fas fa-user mr-2 text-mute"></i>홍길동 (honggildong-1234)
+					</li>
+					<li class="mb-1">
+						<i class="fas fa-envelope mr-2 text-mute"></i>gildonghong@laby.ac.kr
+					</li>
+					<li>
+						<i class="fas fa-link mr-1 text-mute"></i>
+						<a href="" class="btn btn-light-laby btn-xs">Admin</a>
+						<a href="login.html" class="btn btn-light-laby btn-xs">Logout</a>
+					</li>
+					
+				</ul>
+			</div>
+			<!-- // admin info end -->
+		</nav>
+		<div class="container-fluid" style="height:100%">
+			<div class="row" style=" height:100%">
+				<!-- 왼쪽메뉴 -->
+				<nav class="col-md-3 col-lg-2 p-0" id="navbarleft" style="background-color: #904AE8;">
+					<div class="pt-5">
+						<ul class="navbar-nav flex-column">
+							<li class="nav-item">
+								<a class="nav-link active" href="01-current.html">
+									<span data-feather="home"></span>
+									<i class="far fa-chart-bar"></i> 현황 <span class="sr-only">(current)</span>
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="02-site_info.html">
+									<span data-feather="file"></span>
+									<i class="fas fa-info-circle"></i> 기관 정보관리
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="03-vimeo_info.html">
+									<span data-feather="shopping-cart"></span>
+									<i class="fab fa-vimeo-v"></i> 비메오 정보관리
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="04-contents.html">
+									<span data-feather="users"></span>
+									<i class="far fa-hourglass"></i> 콘텐츠 전송현황
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="05-traffic.html">
+									<span data-feather="users"></span>
+									<i class="fas fa-chart-area"></i> 콘텐츠 전송 트래픽
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="06-vimeo_error.html">
+									<span data-feather="users"></span>
+									<i class="fas fa-exclamation-triangle"></i> 비메오 전송오류
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="07-system_log.html">
+									<span data-feather="bar-chart-2"></span>
+									<i class="fas fa-file-medical-alt"></i> 시스템 로그
+								</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+
+				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
+					<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+						<h4 class="text-primary">기관 현황</h4>
+						<div class="btn-toolbar mb-2 mb-md-0">
+						<div class="btn-group mr-2">
+							<a href="" type="button" class="btn btn-sm btn-outline-secondary">기관 생성</a>
+						</div>
+						</div>
+					</div>
+					<table class="table mb-5">
+						<thead>
+						<tr class="bg-light">
+							<th scope="col" width="15%">기관명</th>
+							<th scope="col" width="15%">기관코드</th>
+							<th scope="col" width="15%">전체용량</th>
+							<th scope="col" width="15%">사용용량</th>
+							<th scope="col" width="15%">총 콘텐츠 수</th>
+							<th></th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th scope="row"><a href="">포스텍</a></th>
+							<td>ASDF1234</td>
+							<td>5,000 GB</td>
+							<td>2 GB</td>
+							<td>100 건 </td>
+							<td>
+								<div class="progress">
+									<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="">한성학원</a></th>
+							<td>sdgsdf12313</td>
+							<td>5,000 GB</td>
+							<td>30 GB</td>
+							<td>345 건</td>
+							<td>
+							<div class="progress">
+								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+							</div>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row"><a href="">서울대 인문학과</a></th>
+							<td>qwer5555</td>
+							<td>10,000 GB</td>
+							<td>1235 GB</td>
+							<td>10,234 건</td>
+							<td>
+							<div class="progress">
+								<div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+							</div>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+					<h5 class="mb-3">전송 실패 현황</h5>
+					<table class="table mb-4">
+						<thead>
+						<tr class="bg-light">
+							<th scope="col" width="15%">기관명</th>
+							<th scope="col" width="15%">녹화실</th>
+							<th scope="col" width="15%">제목</th>
+							<th scope="col" width="15%">생성일</th>
+							<th scope="col" width="15%">진행현황</th>
+							<th>정보</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td>포스텍</td>
+							<td>ASDF1234</td>
+							<td></td>
+							<td>2021.06.01</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>포스텍</td>
+							<td>ASDF1234</td>
+							<td></td>
+							<td>2021.06.01</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>포스텍</td>
+							<td>ASDF1234</td>
+							<td></td>
+							<td>2021.06.01</td>
+							<td></td>
+							<td></td>
+						</tr>
+						</tbody>
+					</table>
+				</main>
+			</div><!--// row -->
+		</div><!--// container-fluid -->
+  	</body>
+</html>
