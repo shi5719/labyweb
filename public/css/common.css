@@ -225,11 +225,8 @@ a:not([href]):not([class]):hover {
   box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);}
 .navbar-labyweb .navbar-brand {
   color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-labyweb .navbar-brand:hover,
-.navbar-labyweb .navbar-brand:focus {
-  color: #222222
+  width:auto; height:60px; line-height: 60px;
+  padding:0; margin-right:100px;
 }
 
 .navbar-labyweb .navbar-nav .nav-link {
@@ -239,7 +236,7 @@ a:not([href]):not([class]):hover {
 
 .navbar-labyweb .navbar-nav .nav-link:hover,
 .navbar-labyweb .navbar-nav .nav-link:focus {
-  color: #687CFF
+  color: #687CFF !important
 }
 
 .navbar-labyweb .navbar-nav .nav-link.disabled {
@@ -251,7 +248,7 @@ a:not([href]):not([class]):hover {
 .navbar-labyweb .navbar-nav .nav-link.show {
   color: rgba(0, 0, 0, 0.9);
 }
-.nav-link.active {
+.navbar-labyweb .navbar-nav .active {
   color: #687CFF
 }
 .navbar-labyweb .navbar-toggler {
@@ -313,7 +310,7 @@ footer p {
   border:1px solid #4DD1B9;
 }
 .card-text {
-  width:100%; height:55px; text-align:left;
+  width:100%; height:55px; text-align:left; font-weight:bold; font-size:1.125rem;
 }
 .card-body {
   -ms-flex: 1 1 auto;
@@ -321,7 +318,8 @@ footer p {
   min-height: 1px;
   padding: 0;
 }
-.card-img2 {width:100%; height:162px; background:url(../images/common/noimage.png) no-repeat #F9FAFB 50% 50%; position:relative}
+.card-img2 {width:100%; height:180px; background:url(../images/common/noimage.png) no-repeat #F9FAFB 50% 50%; position:relative}
+.card-img2-year {position:absolute; left:0; bottom:5px; padding:5px; margin-left:2px; background: rgba(0, 0, 0, 0.3); font-size:0.75rem; color:#fff}
 .card-img2-label {position:absolute; right:0; bottom:5px; padding:5px; margin-left:2px; background: rgba(0, 0, 0, 0.3); font-size:0.75rem; color:#fff}
 
 .progress-laby {
@@ -1039,3 +1037,6 @@ select.form-control-login:focus::-ms-value {
   border-radius: 3px;
   cursor: not-allowed;
 }
+
+/* 강의자 사진 */
+.prof-picture {width:80px; height:80px; border-radius:40px;}
