@@ -367,21 +367,34 @@ footer p {
   padding-right: 0.25rem;
   padding-left: 0.25rem;
 }
+.btn-s,
+.btn-group-s > .btn {
+  padding: 0.125rem 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+}
+.btn-s + .dropdown-toggle-split,
+.btn-group-s > .btn + .dropdown-toggle-split {
+  padding-right: 0.25rem;
+  padding-left: 0.25rem;
+}
 .btn-icon img, .btn-icon span {display:inline-block; vertical-align: middle; margin-bottom:1px;}
 .btn-icon span {margin-right:0.5rem}
-
+.btn-icon:hover {
+  color: #000;
+  background-color: #f8f9fa;
+}
 .btn-blue {
   color: #fff;
   background-color: #687CFF;
   border-color: #687CFF;
 }
-
 .btn-blue:hover {
   color: #fff;
   background-color: #3F54E4;
   border-color: #3F54E4;
 }
-
 .btn-blue:focus,
 .btn-blue.focus {
   color: #fff;
@@ -389,7 +402,6 @@ footer p {
   border-color: #3F54E4;
   box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.1);
 }
-
 .btn-blue.disabled,
 .btn-blue:disabled {
   color: #fff;
@@ -963,7 +975,6 @@ select.form-control-login:focus::-ms-value {
   opacity: 1;
 }
 
-
 .carousel-control-prev:hover,
 .carousel-control-prev:focus,
 .carousel-control-next:hover,
@@ -991,6 +1002,7 @@ select.form-control-login:focus::-ms-value {
   text-align: center;
   width: 100%;
   clear: both;
+  margin-top:50px
 }
 
 .paging-labyweb .current {
@@ -1040,3 +1052,48 @@ select.form-control-login:focus::-ms-value {
 
 /* 강의자 사진 */
 .prof-picture {width:80px; height:80px; border-radius:40px;}
+
+/* manager */
+.navbar-manager {box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.1); background-color:#fff; z-index:1000}
+.navbar-nav-left {list-style:none; padding:0}
+.navbar-nav-left .dashboard {height:70px; line-height:60px; background-color: rgba(0, 0, 0, 0.2);}
+.navbar-nav-left .nav-item {padding:20px 20px 15px 20px; border-bottom:1px solid rgba(255, 255, 255, 0.2);}
+.navbar-nav-left .nav-item p {color:rgba(255, 255, 255, 0.5); 
+  background: url(../images/icon/nav-left-dot.png) no-repeat left 50%; padding-left:16px; margin-bottom:8px}
+.navbar-nav-left .nav-link {color: #fff; padding:5px 16px}
+.navbar-nav-left .nav-item .active,
+.navbar-nav-left .nav-item .nav-link:active,
+.navbar-nav-left .nav-item .nav-link:hover,
+.navbar-nav-left .nav-item .nav-link:focus {
+  color: #FEECA8;
+  background: url(../images/icon/nav-left-check.png) no-repeat right 50%;
+}
+.navbar-nav-left .nav-link.disabled {color: rgba(0, 0, 0, 0.3);}
+.manager-content {height: calc(100% - 80px); background-color: #fff; padding:30px; margin:0 20px}
+.manager-content table th,
+.manager-content table td {vertical-align:middle}
+.manager-content .nav-tabs {
+  border-bottom: 1px solid #ccc;
+  margin-bottom:1rem
+}
+.manager-content .nav-tabs .nav-item {
+  margin-bottom: -1px;
+}
+.manager-content .nav-tabs .nav-link {
+  border: none; color:#999;
+}
+.manager-content .nav-tabs .nav-link:hover,
+.manager-content .nav-tabs .nav-link:focus {
+  color:#828282;
+}
+.manager-content .nav-tabs .nav-link.disabled {
+  color: #6c757d;
+  background-color: transparent;
+  border-color: transparent;
+}
+.manager-content .nav-tabs .nav-link.active,
+.manager-content .nav-tabs .nav-item.show .nav-link {
+  color: #904AE8;
+  background-color: #fff;
+  border-bottom:3px solid #904AE8;
+}

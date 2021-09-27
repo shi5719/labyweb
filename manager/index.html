@@ -1,50 +1,53 @@
 <!doctype html>
 <html lang="en">
 	<head>
-		<!-- Required meta tags -->
+		<!-- Required meta tags-->
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
 		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,user-scalable=no" />
-		<title>LABYWEB admin</title>
-		<!-- CSS -->
-		<link rel="stylesheet" href="../public/vendor/bootstrap-4.5.3/css/bootstrap.css" type="text/css"/> <!-- 부트스트랩 -->
-		<link rel="stylesheet" href="../public/vendor/fontawesome-5.15.1/css/all.css"/> <!--폰트 -->
-		<link rel="stylesheet" href="../public/css/common.css" type="text/css" /> <!-- 공통 -->
-		<!-- JS -->
-		<script src="../public/js/popper.min.js" type="text/javascript"></script>
-		<script src="../public/js/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-		crossorigin="anonymous"></script>
-		<script src="../public/js/jquery-3.5.1.js"></script>
-		<script src="../public/vendor/bootstrap-4.5.3/js/bootstrap.min.js" type="text/javascript"></script>
-		<script src="https://kit.fontawesome.com/7cff5a815e.js" crossorigin="anonymous"></script>
+		<title>LABYWEB Admin</title>
+        <!-- Core -->
+        <link rel="stylesheet" href="../public/vendor/jquery-ui-1.12.1/jquery-ui.css" type="text/css" />
+        <link rel="stylesheet" href="../public/vendor/bootstrap-4.5.3/css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="../public/vendor/fontawesome-free-5.15.2/css/all.css"/> <!-- font -->
+        <script src="../public/js/jquery-3.5.1.js"></script>  
+        <script src="../public/js/popper.min.js" type="text/javascript"></script>
+        <script src="../public/vendor/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="../public/vendor/bootstrap-4.5.3/js/bootstrap.js" type="text/javascript"></script>
+        <script src="../public/vendor/fontawesome-free-5.15.2/js/all.js" type="text/javascript"></script>
+        <!-- External -->
+        <!-- icheck -->
+        <link rel="stylesheet" href="../public/vendor/icheck-material-master/icheck-material.css" type="text/css" /> <!-- chkbox, radiobtn -->
+        <!-- Laby -->
+        <link rel="stylesheet" href="../public/css/common.css" type="text/css" /> <!-- common -->
 		<style>
 			html {height: 100%;}
-			html, body {height: 100%;min-height: 100% !important;}
+			html, body {height: 100%;min-height: 100% !important; background-color:#F7F7F7}
 		</style>
 	</head>
 	<body>
-		<nav class="navbar navbar-light bg-light p-3">
+		<nav class="navbar navbar-manager p-3">
 			<a class="navbar-brand" href="index.html">LABY University</a>
 			<!-- admin info -->
 			<div class="dropdown">
+				<span class="text-s">현재 <span class="text-blue">2021년</span> 강좌로 설정되어 있습니다.</span>
 				<a class="btn text-s" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					<img src="../public/images/icon/user.png" class="mr-1" />
-					<span>홍길동 (honggildong-1234)</span>
+					<span>홍길동 (prof)</span>
 				</a>
-				<ul class="dropdown-menu dropdown-menu-xl-right text-s p-3" aria-labelledby="dropdownMenuLink">
+				<ul class="dropdown-menu dropdown-menu-xl-right text-s p-3" aria-labelledby="dropdownMenuLink" style="width: 225px;">
 					<li class="mb-1">
 						<i class="fas fa-user mr-2 text-mute"></i>홍길동 (honggildong-1234)
 					</li>
 					<li class="mb-1">
-						<i class="fas fa-envelope mr-2 text-mute"></i>gildonghong@laby.ac.kr
+						<i class="fas fa-envelope mr-2 text-mute"></i>gildonghong@cnue.ac.kr
 					</li>
 					<li>
 						<i class="fas fa-link mr-1 text-mute"></i>
-						<a href="" class="btn btn-light-laby btn-xs">Admin</a>
-						<a href="login.html" class="btn btn-light-laby btn-xs">Logout</a>
+						<a href="" class="btn btn-light-laby btn-xs">CMS바로가기</a>
+						<a href="" class="btn btn-light-laby btn-xs">Logout</a>
 					</li>
-					
 				</ul>
 			</div>
 			<!-- // admin info end -->
@@ -54,138 +57,222 @@
 				<!-- 왼쪽메뉴 -->
 				<nav class="col-md-3 col-lg-2 p-0" id="navbarleft" style="background-color: #904AE8;">
 					<div>
-						<ul class="navbar-nav">
-							<li>
-								<a class="nav-link active px-4" href="" style="height:60px; background-color: blue; line-height:60px">
+						<ul class="navbar-nav-left">
+							<li class="dashboard">
+								<a class="nav-link px-4" href="">
 									<i class="far fa-chart-bar"></i> Dashboard
 								</a>
 							</li>
-							<li class="nav-section">
-								<a class="nav-link" href="02-site_info.html">
-									<span data-feather="file"></span>
-									<i class="fas fa-info-circle"></i> 기관 정보관리
-								</a>
+							<li class="nav-item">
+								<p>사용자 관리</p>
+								<a class="nav-link active" href="">사용자 목록</a>
 							</li>
-							<li>
-								<a class="nav-link" href="03-vimeo_info.html">
-									<span data-feather="shopping-cart"></span>
-									<i class="fab fa-vimeo-v"></i> 비메오 정보관리
-								</a>
+							<li class="nav-item">
+								<p>강좌 관리</p>
+								<a class="nav-link" href="">과정 관리</a>
 							</li>
-							<li>
-								<a class="nav-link" href="04-contents.html">
-									<span data-feather="users"></span>
-									<i class="far fa-hourglass"></i> 콘텐츠 전송현황
-								</a>
+							<li class="nav-item">
+								<p>권한 관리</p>
+								<a class="nav-link" href="">사용자권한 설정</a>
+								<a class="nav-link" href="">권한그룹 설정</a>
 							</li>
-							<li>
-								<a class="nav-link" href="05-traffic.html">
-									<span data-feather="users"></span>
-									<i class="fas fa-chart-area"></i> 콘텐츠 전송 트래픽
-								</a>
+							<li class="nav-item">
+								<p>관리 도구</p>
+								<a class="nav-link" href="">연동 관리</a>
+							</li>
+							<li class="nav-item">
+								<p>통계</p>
+								<a class="nav-link" href="">접속 현황</a>
+								<a class="nav-link" href="">로그인 이력</a>
 							</li>
 						</ul>
 					</div>
 				</nav>
-
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-					<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-						<h4 class="text-primary">기관 현황</h4>
-						<div class="btn-toolbar mb-2 mb-md-0">
-						<div class="btn-group mr-2">
-							<a href="" type="button" class="btn btn-sm btn-outline-secondary">기관 생성</a>
-						</div>
-						</div>
-					</div>
-					<table class="table mb-5">
-						<thead>
-						<tr class="bg-light">
-							<th scope="col" width="15%">기관명</th>
-							<th scope="col" width="15%">기관코드</th>
-							<th scope="col" width="15%">전체용량</th>
-							<th scope="col" width="15%">사용용량</th>
-							<th scope="col" width="15%">총 콘텐츠 수</th>
-							<th></th>
-						</tr>
-						</thead>
-						<tbody>
-						<tr>
-							<th scope="row"><a href="">포스텍</a></th>
-							<td>ASDF1234</td>
-							<td>5,000 GB</td>
-							<td>2 GB</td>
-							<td>100 건 </td>
-							<td>
-								<div class="progress">
-									<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+					<div class="p-4">사용자 관리</div>
+					<section class="manager-content">
+						<ul class="nav nav-tabs" id="myTab">
+							<li class="nav-item">
+							  <a class="nav-link active" id="userlist-tab" data-toggle="tab" href="#userlist" aria-controls="userlist" aria-selected="true">사용자 목록</a>
+							</li>
+							<li class="nav-item">
+							  <a class="nav-link" id="useradd-tab" data-toggle="tab" href="#useradd" aria-controls="useradd" aria-selected="false">사용자 일괄 추가</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<!-- tab1 사용자 목록 -->
+							<div class="tab-pane fade show active" id="userlist" aria-labelledby="userlist-tab">
+								<form>
+									<div class="form-row p-3 bg-light">
+										<div class="col-2">
+											<label class="mr-sm-2 sr-only" for="select">Preference</label>
+											<select class="custom-select mr-sm-2" id="select">
+												<option selected>전체</option>
+												<option value="1">전체</option>
+												<option value="2">신청중</option>
+												<option value="3">거부</option>
+												<option value="4">가입</option>
+											</select>
+										</div>
+										<div class="col-auto mr-auto">
+											<div class="icheck-material-deeppurple custom-control-inline">
+												<input class="form-check-input" type="checkbox" id="user-1">
+												<label class="form-check-label" for="user-1">일반</label>
+											</div>
+											<div class="icheck-material-deeppurple custom-control-inline">
+												<input class="form-check-input" type="checkbox" id="user-prof">
+												<label class="form-check-label" for="user-prof">강사</label>
+											</div>
+											<div class="icheck-material-deeppurple custom-control-inline">
+												<input class="form-check-input" type="checkbox" id="user-admin">
+												<label class="form-check-label" for="user-admin">운영자</label>
+											</div>
+										</div>
+										<div class="col-3">
+											<input type="text" class="form-control" placeholder="검색(ID,이름)">
+										</div>
+										<div class="col-auto">
+											<a href="" class="btn btn-blue">검색</a>
+											<a href="" class="btn btn-light-laby">초기화</a>
+										</div>
+									</div>
+								</form>
+
+								<div class="py-3 text-left">
+									<a href="#" class="btn btn-s btn-light-laby mr-1"> 사용자 추가</a>
+									<a href="#" class="btn btn-s btn-light-laby mr-1"><i class="fas fa-cloud-download-alt"></i> 엑셀다운로드</a>
 								</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><a href="">한성학원</a></th>
-							<td>sdgsdf12313</td>
-							<td>5,000 GB</td>
-							<td>30 GB</td>
-							<td>345 건</td>
-							<td>
-							<div class="progress">
-								<div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%</div>
+								<table class="table">
+									<thead class="text-center">
+									  <tr>
+										<th scope="col">번호</th>
+										<th scope="col">아이디</th>
+										<th scope="col">이름</th>
+										<th scope="col">이메일</th>
+										<th scope="col">등록일</th>
+										<th scope="col">회원구분</th>
+										<th scope="col">가입상태</th>
+										<th scope="col">기능</th>
+									  </tr>
+									</thead>
+									<tbody class="text-center">
+										<tr>
+											<td scope="row">4</td>
+											<td>sunshin-12345</td>
+											<td>lee.sunshin</td>
+											<td>administrator@lab241.com</td>
+											<td>2021.01.23</td>
+											<td class="text-left"><i class="fas text-blue fa-user-friends"></i> 일반</td>
+											<td>
+												<label class="sr-only" for="select">Preference</label>
+												<select class="form-control form-control-sm" id="select">
+													<option value="1">신청중</option>
+													<option value="2">거부</option>
+													<option value="3">가입</option>
+												</select>
+											</td>
+											<td>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-edit"></i> 수정</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-trash-alt"></i> 삭제</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-list-ul"></i> 수강강좌</a>
+												<a href="" class="btn btn-icon btn-s"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a>
+											</td>
+									  	</tr>
+										<tr>
+											<td scope="row">3</td>
+											<td>lee.sunshin</td>
+											<td>이순신</td>
+											<td>mail@lab241.com</td>
+											<td>2021.01.23</td>
+											<td class="text-left"><i class="fas text-blue fa-chalkboard-teacher"></i> 강사</td>
+											<td>
+												<label class="sr-only" for="select">Preference</label>
+												<select class="form-control form-control-sm" id="select">
+													<option value="1">신청중</option>
+													<option value="2">거부</option>
+													<option value="3">가입</option>
+												</select>
+											</td>
+											<td>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-edit"></i> 수정</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-trash-alt"></i> 삭제</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-list-ul"></i> 수강강좌</a>
+												<a href="" class="btn btn-icon btn-s"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a>
+											</td>
+										</tr>
+										<tr>
+											<td scope="row">2</td>
+											<td>lee.sunshin</td>
+											<td>이순신</td>
+											<td>mail@lab241.com</td>
+											<td>2021.01.23</td>
+											<td class="text-left"><i class="fas text-blue fa-user-cog"></i> 운영자</td>
+											<td>
+												<label class="sr-only" for="select">Preference</label>
+												<select class="form-control form-control-sm" id="select">
+													<option value="1">신청중</option>
+													<option value="2">거부</option>
+													<option value="3">가입</option>
+												</select>
+											</td>
+											<td>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-edit"></i> 수정</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-trash-alt"></i> 삭제</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-list-ul"></i> 수강강좌</a>
+												<a href="" class="btn btn-icon btn-s"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a>
+											</td>
+										</tr>
+										<tr>
+											<td scope="row">1</td>
+											<td>lee.sunshin</td>
+											<td>이순신</td>
+											<td>mail@lab241.com</td>
+											<td>2021.01.23</td>
+											<td class="text-left"><i class="fas text-blue fa-user-cog"></i> 운영자</td>
+											<td>
+												<label class="sr-only" for="select">Preference</label>
+												<select class="form-control form-control-sm" id="select">
+													<option value="1">신청중</option>
+													<option value="2">거부</option>
+													<option value="3">가입</option>
+												</select>
+											</td>
+											<td>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-edit"></i> 수정</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-trash-alt"></i> 삭제</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-list-ul"></i> 수강강좌</a>
+												<a href="" class="btn btn-icon btn-s"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<!-- paging -->
+								<div class="paging-labyweb">
+									<a href=""><span class="pageUpDown"><i class="fas fa-angle-double-left"></i></span></a>
+									<a href=""><span class="pageUpDown"><i class="fas fa-angle-left"></i></span></a>
+									<a href=""><span class="page">1</span></a>
+									<a href=""><span class="current">2</span></a>
+									<a href=""><span class="page">3</span></a>
+									<a href=""><span class="page">4</span></a>
+									<a href=""><span class="page">5</span></a>
+									<a href=""><span class="page">6</span></a>
+									<a href=""><span class="page">7</span></a>
+									<a href=""><span class="page">8</span></a>
+									<a href=""><span class="pageUpDown"><i class="fas fa-angle-right"></i></span></a>
+									<a href=""><span class="pageUpDown"><i class="fas fa-angle-double-right"></i></span></a>
+								</div>
+								<!--// paging -->
 							</div>
-							</td>
-						</tr>
-						<tr>
-							<th scope="row"><a href="">서울대 인문학과</a></th>
-							<td>qwer5555</td>
-							<td>10,000 GB</td>
-							<td>1235 GB</td>
-							<td>10,234 건</td>
-							<td>
-							<div class="progress">
-								<div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+							<!-- tab2 사용자 일괄 추가 -->
+							<div class="tab-pane fade" id="useradd" raria-labelledby="useradd-tab">
+
 							</div>
-							</td>
-						</tr>
-						</tbody>
-					</table>
-					<h5 class="mb-3">전송 실패 현황</h5>
-					<table class="table mb-4">
-						<thead>
-						<tr class="bg-light">
-							<th scope="col" width="15%">기관명</th>
-							<th scope="col" width="15%">녹화실</th>
-							<th scope="col" width="15%">제목</th>
-							<th scope="col" width="15%">생성일</th>
-							<th scope="col" width="15%">진행현황</th>
-							<th>정보</th>
-						</tr>
-						</thead>
-						<tbody>
-						<tr>
-							<td>포스텍</td>
-							<td>ASDF1234</td>
-							<td></td>
-							<td>2021.06.01</td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>포스텍</td>
-							<td>ASDF1234</td>
-							<td></td>
-							<td>2021.06.01</td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>포스텍</td>
-							<td>ASDF1234</td>
-							<td></td>
-							<td>2021.06.01</td>
-							<td></td>
-							<td></td>
-						</tr>
-						</tbody>
-					</table>
+						</div>
+					</section>
 				</main>
 			</div><!--// row -->
 		</div><!--// container-fluid -->
