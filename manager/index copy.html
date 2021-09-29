@@ -25,17 +25,11 @@
 			html {height: 100%;}
 			html, body {height: 100%;min-height: 100% !important; background-color:#F7F7F7}
 		</style>
-		<script type="text/javascript">
-			// leftnav include
-			$(document).ready(function(){
-				$("#navbar-manager-left").load("navbar-manager-left.html");
-			});
-		</script>
 	</head>
 	<body>
-		<!-- Modal scroll -->
+		<!-- Modal -->
 		<div class="modal fade" id="modal-course" tabindex="1" aria-labelledby="modal-course-label" aria-hidden="true">
-			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="modal-course-label">수강강좌 목록</h5>
@@ -44,119 +38,11 @@
 					</a>
 				</div>
 				<div class="modal-body">
-					<table class="table table-sm">
-						<thead>
-							<tr>
-								<th style="width:15%">년도</th>
-								<th>강좌명</th>
-								<th style="width:20%">과정코드</th>
-							</tr>
-						</thead>
-						<tbody class="text-s">
-							<tr>
-								<td rowspan="5">2021년</td>
-								<td>인공지능(AI)이란?</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>데이터를 통해 스스로 학습하는 머신러닝 배우기 2주차</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>Math for Artificial Intelligence (인공지능을 위한 수학)</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>Introduction to Artificial Intelligence (인공지능 개론)</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>인공지능(AI)이란?/td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td rowspan="4">2020년</td>
-								<td>세상을 바꾸는 빅데이터</td>
-								<td>cos-101010232342</td>
-							</tr>
-							<tr>
-								<td>생활의 발견 1</td>
-								<td>cos-101010232343</td>
-							</tr>
-							<tr>
-								<td>데이터를 통해 스스로 학습하는 머신러닝 배우기 2주차</td>
-								<td>cos-101010232344</td>
-							</tr>
-							<tr>
-								<td>생활의 발견 2</td>
-								<td>cos-101010232345</td>
-							</tr>
-							<tr>
-								<td rowspan="15">2019년</td>
-								<td>희망의 인문학 : 우리는 희망에서 무엇을 배우고 가르칠 수 있는가 Ⅱ</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>소비자가 만드는 새로운 세상</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>생활속의 표절과 저작권</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>글로벌 시대, 문화관광 콘텐츠의 이해</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>한국의 역사</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>희망의 인문학 : 우리는 희망에서 무엇을 배우고 가르칠 수 있는가 Ⅱ</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>소비자가 만드는 새로운 세상</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>생활속의 표절과 저작권</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>글로벌 시대, 문화관광 콘텐츠의 이해</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>한국의 역사</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>희망의 인문학 : 우리는 희망에서 무엇을 배우고 가르칠 수 있는가 Ⅱ</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>소비자가 만드는 새로운 세상</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>생활속의 표절과 저작권</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>글로벌 시대, 문화관광 콘텐츠의 이해</td>
-								<td>cos-12333</td>
-							</tr>
-							<tr>
-								<td>한국의 역사</td>
-								<td>cos-12333</td>
-							</tr>
-						</tbody>
-					</table>
+				...
 				</div>
 				<div class="modal-footer">
-					<a href="" class="btn btn-primary">확인</a>
+					<a href="" class="btn btn-secondary" data-dismiss="modal">Close</a>
+					<a href="" class="btn btn-primary">Save changes</a>
 				</div>
 			</div>
 			</div>
@@ -189,9 +75,39 @@
 		<div class="container-fluid" style="height:100%">
 			<div class="row" style=" height:100%">
 				<!-- 왼쪽메뉴 -->
-				<div class="col-md-3 col-lg-2 p-0">
-					<div id="navbar-manager-left"></div>
-				</div>
+				<nav class="col-md-3 col-lg-2 p-0" id="navbarleft" style="background-color: #904AE8;">
+					<div>
+						<ul class="navbar-nav-left">
+							<li class="dashboard">
+								<a class="nav-link px-4" href="">
+									<i class="far fa-chart-bar"></i> Dashboard
+								</a>
+							</li>
+							<li class="nav-item">
+								<p>사용자 관리</p>
+								<a class="nav-link active" href="">사용자 목록</a>
+							</li>
+							<li class="nav-item">
+								<p>강좌 관리</p>
+								<a class="nav-link" href="">과정 관리</a>
+							</li>
+							<li class="nav-item">
+								<p>권한 관리</p>
+								<a class="nav-link" href="">사용자권한 설정</a>
+								<a class="nav-link" href="">권한그룹 설정</a>
+							</li>
+							<li class="nav-item">
+								<p>관리 도구</p>
+								<a class="nav-link" href="">연동 관리</a>
+							</li>
+							<li class="nav-item">
+								<p>통계</p>
+								<a class="nav-link" href="">접속 현황</a>
+								<a class="nav-link" href="">로그인 이력</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
 					<div class="p-4">사용자 관리</div>
 					<section class="manager-content">
@@ -256,7 +172,7 @@
 										<th scope="col">등록일</th>
 										<th scope="col">회원구분</th>
 										<th scope="col">가입상태</th>
-										<th scope="col"></th>
+										<th scope="col">기능</th>
 									  </tr>
 									</thead>
 									<tbody class="text-center">
@@ -266,7 +182,7 @@
 											<td>lee.sunshin</td>
 											<td>administrator@lab241.com</td>
 											<td>2021.01.23</td>
-											<td><i class="fas text-blue fa-user-friends"></i> 일반</td>
+											<td class="text-left"><i class="fas text-blue fa-user-friends"></i> 일반</td>
 											<td>
 												<label class="sr-only" for="select">Preference</label>
 												<select class="form-control form-control-sm" id="select">
@@ -276,22 +192,14 @@
 												</select>
 											</td>
 											<td>
-												<!-- hamburger -->
-												<a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="m-0">
-													<img src="../public/images/icon/more-vert.png" alt="햄버거버튼" />
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-edit"></i> 수정</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-trash-alt"></i> 삭제</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a>
+												<a href="" class="btn btn-icon btn-s mr-2" data-toggle="modal" data-target="#modal-course">
+													<i class="fas text-s fa-list-ul"></i> 수강강좌
 												</a>
-												<ul class="dropdown-menu dropdown-menu-right p-2">
-													<li><a href="user-edit.html" class="btn btn-icon"><i class="far text-s fa-edit"></i> 수정</a></li>
-													<li><a href="" class="btn btn-icon"><i class="far text-s fa-trash-alt"></i> 삭제</a></li>
-													<li><a href="" class="btn btn-icon"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a></li>
-													<li>
-														<a href="" class="btn btn-icon" data-toggle="modal" data-target="#modal-course">
-															<i class="fas text-s fa-list-ul"></i> 수강강좌
-														</a>
-													</li>
-													<li><a href="" class="btn btn-icon"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a></li>
-												</ul>
-												<!--// hamburger -->
+												
+												<a href="" class="btn btn-icon btn-s"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a>
 											</td>
 									  	</tr>
 										<tr>
@@ -300,7 +208,7 @@
 											<td>이순신</td>
 											<td>mail@lab241.com</td>
 											<td>2021.01.23</td>
-											<td><i class="fas text-blue fa-chalkboard-teacher"></i> 강사</td>
+											<td class="text-left"><i class="fas text-blue fa-chalkboard-teacher"></i> 강사</td>
 											<td>
 												<label class="sr-only" for="select">Preference</label>
 												<select class="form-control form-control-sm" id="select">
@@ -310,22 +218,11 @@
 												</select>
 											</td>
 											<td>
-												<!-- hamburger -->
-												<a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="m-0">
-													<img src="../public/images/icon/more-vert.png" alt="햄버거버튼" />
-												</a>
-												<ul class="dropdown-menu dropdown-menu-right p-2">
-													<li><a href="user-edit.html" class="btn btn-icon"><i class="far text-s fa-edit"></i> 수정</a></li>
-													<li><a href="" class="btn btn-icon"><i class="far text-s fa-trash-alt"></i> 삭제</a></li>
-													<li><a href="" class="btn btn-icon"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a></li>
-													<li>
-														<a href="" class="btn btn-icon" data-toggle="modal" data-target="#modal-course">
-															<i class="fas text-s fa-list-ul"></i> 수강강좌
-														</a>
-													</li>
-													<li><a href="" class="btn btn-icon"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a></li>
-												</ul>
-												<!--// hamburger -->
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-edit"></i> 수정</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-trash-alt"></i> 삭제</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-list-ul"></i> 수강강좌</a>
+												<a href="" class="btn btn-icon btn-s"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a>
 											</td>
 										</tr>
 										<tr>
@@ -334,7 +231,7 @@
 											<td>이순신</td>
 											<td>mail@lab241.com</td>
 											<td>2021.01.23</td>
-											<td><i class="fas text-blue fa-user-cog"></i> 운영자</td>
+											<td class="text-left"><i class="fas text-blue fa-user-cog"></i> 운영자</td>
 											<td>
 												<label class="sr-only" for="select">Preference</label>
 												<select class="form-control form-control-sm" id="select">
@@ -344,22 +241,11 @@
 												</select>
 											</td>
 											<td>
-												<!-- hamburger -->
-												<a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="m-0">
-													<img src="../public/images/icon/more-vert.png" alt="햄버거버튼" />
-												</a>
-												<ul class="dropdown-menu dropdown-menu-right p-2">
-													<li><a href="user-edit.html" class="btn btn-icon"><i class="far text-s fa-edit"></i> 수정</a></li>
-													<li><a href="" class="btn btn-icon"><i class="far text-s fa-trash-alt"></i> 삭제</a></li>
-													<li><a href="" class="btn btn-icon"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a></li>
-													<li>
-														<a href="" class="btn btn-icon" data-toggle="modal" data-target="#modal-course">
-															<i class="fas text-s fa-list-ul"></i> 수강강좌
-														</a>
-													</li>
-													<li><a href="" class="btn btn-icon"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a></li>
-												</ul>
-												<!--// hamburger -->
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-edit"></i> 수정</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-trash-alt"></i> 삭제</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-list-ul"></i> 수강강좌</a>
+												<a href="" class="btn btn-icon btn-s"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a>
 											</td>
 										</tr>
 										<tr>
@@ -368,7 +254,7 @@
 											<td>이순신</td>
 											<td>mail@lab241.com</td>
 											<td>2021.01.23</td>
-											<td><i class="fas text-blue fa-user-cog"></i> 운영자</td>
+											<td class="text-left"><i class="fas text-blue fa-user-cog"></i> 운영자</td>
 											<td>
 												<label class="sr-only" for="select">Preference</label>
 												<select class="form-control form-control-sm" id="select">
@@ -378,22 +264,11 @@
 												</select>
 											</td>
 											<td>
-												<!-- hamburger -->
-												<a href="" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="m-0">
-													<img src="../public/images/icon/more-vert.png" alt="햄버거버튼" />
-												</a>
-												<ul class="dropdown-menu dropdown-menu-right p-2">
-													<li><a href="user-edit.html" class="btn btn-icon"><i class="far text-s fa-edit"></i> 수정</a></li>
-													<li><a href="" class="btn btn-icon"><i class="far text-s fa-trash-alt"></i> 삭제</a></li>
-													<li><a href="" class="btn btn-icon"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a></li>
-													<li>
-														<a href="" class="btn btn-icon" data-toggle="modal" data-target="#modal-course">
-															<i class="fas text-s fa-list-ul"></i> 수강강좌
-														</a>
-													</li>
-													<li><a href="" class="btn btn-icon"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a></li>
-												</ul>
-												<!--// hamburger -->
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-edit"></i> 수정</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-trash-alt"></i> 삭제</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a>
+												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-list-ul"></i> 수강강좌</a>
+												<a href="" class="btn btn-icon btn-s"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a>
 											</td>
 										</tr>
 									</tbody>
@@ -417,30 +292,7 @@
 							</div>
 							<!-- tab2 사용자 일괄 추가 -->
 							<div class="tab-pane fade" id="useradd" raria-labelledby="useradd-tab">
-								<div class="p-4" style="border:1px solid #eee; border-radius:10px">
-									<p>
-										엑셀자료 입력방법 
-										<a href="#" class="btn btn-xs btn-blue ml-2"><i class="fas fa-cloud-download-alt"></i> 엑셀다운로드</a>
-									</p>
-									<ul class="font-14" style="line-height:200%">
-										<li>비밀번호가 비어 있을 경우 ID와 동일하게 입력됩니다.</li>
-										<li>일반회원 일괄 등록 가능합니다.</li>
-										<li>이미 등록되어 있는 ID일 경우 정보가 업데이트 됩니다.</li>
-									</ul>
 
-									<p>첨부파일</p>
-									<!-- 파일찾기 업로드 -->
-									<div class="input-group">
-										<div class="custom-file">
-											<input type="file" class="custom-file-input" id="inputGroupFile02">
-											<label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">파일찾기</label>
-										</div>
-										<div class="input-group-append">
-											<span class="input-group-text" id="inputGroupFileAddon02">업로드</span>
-										</div>
-									</div>
-									<div class="font-12 text-blue mt-2">* 1024건 중 1001건이 등록되었습니다.</div>
-								</div>
 							</div>
 						</div>
 					</section>
