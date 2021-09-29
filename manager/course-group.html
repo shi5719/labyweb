@@ -143,59 +143,37 @@
 					<div id="navbar-manager-left"></div>
 				</div>
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
-					<div class="p-4">강좌 관리 > <span class="text-v">년도 설정</span></div>
+					<div class="p-4">강좌 관리 > <span class="text-v">강좌 분류 관리</span></div>
 					<section class="manager-content">
-						<p>
-							<a href="" class="btn btn-blue" data-toggle="modal" data-target="#year-upload">등록하기</a>
-							<a href="" class="btn btn-light-laby">기타</a>
-						</p>
-						<table class="table">
-							<thead class="text-center">
-							  <tr>
-								<th scope="col">년도</th>
-								<th scope="col">이름</th>
-								<th scope="col">강좌</th>
-								<th scope="col">콘텐츠</th>
-								<th scope="col">설정</th>
-								<th scope="col"></th>
-							  </tr>
-							</thead>
-							<tbody class="text-center">
-								<tr>
-									<td scope="row">2021</td>
-									<td>2021년</td>
-									<td>20 건</td>
-									<td>1234 건</td>
-									<td>현재설정</td>
-									<td>
-										<a href="" class="btn btn-icon" data-toggle="modal" data-target="#year-edit"><i class="far text-s fa-edit"></i> 수정</a>
-										<a href="" class="btn btn-icon"><i class="far text-s fa-trash-alt"></i> 삭제</a>
-									</td>
-								</tr>
-								<tr>
-									<td scope="row">2020</td>
-									<td>2020년</td>
-									<td>120 건</td>
-									<td>1234 건</td>
-									<td><a href="" class="btn btn-light-laby">설정</a></td>
-									<td>
-										<a href="" class="btn btn-icon" data-toggle="modal" data-target="#year-edit"><i class="far text-s fa-edit"></i> 수정</a>
-										<a href="" class="btn btn-icon"><i class="far text-s fa-trash-alt"></i> 삭제</a>
-									</td>
-								</tr>
-								<tr>
-									<td scope="row">2019</td>
-									<td>2019년</td>
-									<td>10 건</td>
-									<td>890 건</td>
-									<td><a href="" class="btn btn-light-laby">설정</a></td>
-									<td>
-										<a href="" class="btn btn-icon" data-toggle="modal" data-target="#year-edit"><i class="far text-s fa-edit"></i> 수정</a>
-										<a href="" class="btn btn-icon"><i class="far text-s fa-trash-alt"></i> 삭제</a>
-									</td>
-								</tr>
-							</tbody>
-						</table>
+						<div class="mb-3">
+							<label class="mr-sm-2 sr-only" for="select">강좌 년도</label>
+							<select class="custom-select" id="select" style="width:300px;">
+								<option value="1">2021년 자료</option>
+								<option value="2">2020년 자료</option>
+								<option value="3">2019년 자료</option>
+							</select>
+						</div>
+						<div class="row">
+							<div class="col-6">
+								<ul class="list-group">
+									<li class="list-group-item">
+										<span>대분류 목록</span>
+										<span>123</span>
+									</li>
+									<li class="list-group-item" style="min-height:300px;">
+										
+									</li>
+								</ul>								  
+							</div>
+							<div class="col-6">
+								<ul class="list-group">
+									<li class="list-group-item">상세분류 목록</li>
+									<li class="list-group-item" style="min-height:300px;">
+										123	
+									</li>
+								</ul>	
+							</div>
+						</div>
 					</section>
 				</main>
 			</div><!--// row -->
