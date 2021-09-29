@@ -27,6 +27,26 @@
 		</style>
 	</head>
 	<body>
+		<!-- Modal -->
+		<div class="modal fade" id="modal-course" tabindex="1" aria-labelledby="modal-course-label" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="modal-course-label">수강강좌 목록</h5>
+					<a href="" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</a>
+				</div>
+				<div class="modal-body">
+				...
+				</div>
+				<div class="modal-footer">
+					<a href="" class="btn btn-secondary" data-dismiss="modal">Close</a>
+					<a href="" class="btn btn-primary">Save changes</a>
+				</div>
+			</div>
+			</div>
+		</div>
 		<nav class="navbar navbar-manager p-3">
 			<a class="navbar-brand" href="index.html">LABY University</a>
 			<!-- admin info -->
@@ -175,7 +195,10 @@
 												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-edit"></i> 수정</a>
 												<a href="" class="btn btn-icon btn-s mr-2"><i class="far text-s fa-trash-alt"></i> 삭제</a>
 												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-unlock-alt"></i> 비번초기화</a>
-												<a href="" class="btn btn-icon btn-s mr-2"><i class="fas text-s fa-list-ul"></i> 수강강좌</a>
+												<a href="" class="btn btn-icon btn-s mr-2" data-toggle="modal" data-target="#modal-course">
+													<i class="fas text-s fa-list-ul"></i> 수강강좌
+												</a>
+												
 												<a href="" class="btn btn-icon btn-s"><i class="fas text-s fa-external-link-alt"></i> 강좌관리</a>
 											</td>
 									  	</tr>
