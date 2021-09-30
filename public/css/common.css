@@ -64,7 +64,7 @@ a:hover {
   padding: 0.375rem 0.75rem 0.375rem 0.75rem;
 }*/
 
-@font-face {
+/*@font-face {
   font-family: "NotoKrR", sans-serif;
   font-style: normal;
   font-weight: 300;
@@ -81,8 +81,8 @@ a:hover {
     url(./fonts/NotoSansKR-Medium.otf);
   src: url(./fonts/NotoSansKR-Medium.woff2) format("woff2"),
     url(./fonts/NotoSansKR-Medium.woff) format("woff");
-}
-/*
+}*/
+
 @font-face {
   font-family: "NotoKrR";
   font-style: normal;
@@ -101,7 +101,7 @@ a:hover {
   src: url(./fonts/NotoSansKR-Medium.woff2) format("woff2"),
     url(./fonts/NotoSansKR-Medium.woff) format("woff");
 }
-*/
+
 a {
   color: #222;
   text-decoration: none;
