@@ -82,7 +82,15 @@ a:hover {
   src: url(./fonts/NotoSansKR-Medium.woff2) format("woff2"),
     url(./fonts/NotoSansKR-Medium.woff) format("woff");
 }*/
-
+@font-face {
+  font-family: "NotoKrL";
+  font-style: normal;
+  font-weight: 200;
+  src: local("Noto Sans Light"), local("NotoSans-Light"),
+    url(./fonts/NotoSansKR-Light.otf);
+  src: url(./fonts/NotoSansKR-Light.woff2) format("woff2"),
+    url(./fonts/NotoSansKR-Light.woff) format("woff");
+}
 @font-face {
   font-family: "NotoKrR";
   font-style: normal;
@@ -125,6 +133,9 @@ a:not([href]):not([class]):hover {
 .font-b {
   font-family: "NotoKrM", sans-serif;
 }
+.font-light {
+  font-family: "NotoKrL";
+}
 .font-12 {
   font-size: 0.75rem;
 }
@@ -152,6 +163,7 @@ a:not([href]):not([class]):hover {
 .text-mute {color:#dadada}
 .text-v {color:#904AE8}
 .text-lightgreen {color:#73E4A2}
+.text-gray {color:#828282}
 .absolute-center {
   position: absolute;
   left: 50%;
@@ -232,7 +244,7 @@ a:not([href]):not([class]):hover {
 }
 
 .navbar-labyweb .navbar-nav .nav-link {
-  color: #222222; font-weight:500;
+  color: #222222; /*font-weight:500;*/
   margin:0 1rem
 }
 
@@ -471,7 +483,7 @@ footer p {
 }
 
 .btn-light-laby {
-  color: #828282;
+  color: #444;
   background-color: #ffffff;
   border-color: #e5e5e5;
 }
