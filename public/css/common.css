@@ -37,16 +37,7 @@ select {
 strong {
   font-family: "NotoKrM", sans-serif;
 }
-a {
-  color: #041794;
-  text-decoration: none;
-  background-color: transparent;
-}
 
-a:hover {
-  color: #2f42c1;
-  text-decoration: underline;
-}
 /*.form-control {
   height: calc(1.5em + 0.625rem + 2px);
   padding: 0.25rem 0.75rem 0.5rem 0.5rem;
@@ -110,8 +101,8 @@ a:hover {
     url(./fonts/NotoSansKR-Medium.woff) format("woff");
 }
 
-a {
-  color: #222;
+a  {
+  color: #000;
   text-decoration: none;
   background-color: transparent;
 }
