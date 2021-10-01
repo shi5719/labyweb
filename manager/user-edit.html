@@ -26,8 +26,9 @@
 			html, body {height: 100%;min-height: 100% !important; background-color:#F7F7F7}
 		</style>
 		<script type="text/javascript">
-			// leftnav include
+			// header, leftnav include
 			$(document).ready(function(){
+				$("#navbar-manager").load("navbar-manager.html");
 				$("#navbar-manager-left").load("navbar-manager-left.html");
 			});
 		</script>
@@ -53,37 +54,14 @@
 			</div>
 			</div>
 		</div>
-		<nav class="navbar navbar-manager p-3">
-			<a class="navbar-brand" href="index.html">LABY University</a>
-			<!-- admin info -->
-			<div class="dropdown">
-				<span class="text-s">현재 <span class="text-blue">2021년</span> 강좌로 설정되어 있습니다.</span>
-				<a class="btn text-s" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<img src="../public/images/icon/user.png" class="mr-1" />
-					<span>홍길동 (prof)</span>
-				</a>
-				<ul class="dropdown-menu dropdown-menu-xl-right text-s p-3" aria-labelledby="dropdownMenuLink" style="width: 225px;">
-					<li class="mb-1">
-						<i class="fas fa-user mr-2 text-mute"></i>홍길동 (honggildong-1234)
-					</li>
-					<li class="mb-1">
-						<i class="fas fa-envelope mr-2 text-mute"></i>gildonghong@cnue.ac.kr
-					</li>
-					<li>
-						<i class="fas fa-link mr-1 text-mute"></i>
-						<a href="" class="btn btn-light-laby btn-xs">CMS바로가기</a>
-						<a href="" class="btn btn-light-laby btn-xs">Logout</a>
-					</li>
-				</ul>
-			</div>
-			<!-- // admin info end -->
-		</nav>
+		<div id="navbar-manager"></div><!-- header -->
 		<div class="container-fluid" style="height:100%">
 			<div class="row" style=" height:100%">
 				<!-- 왼쪽메뉴 -->
 				<div class="col-md-3 col-lg-2 p-0">
 					<div id="navbar-manager-left"></div>
 				</div>
+				<!--// 왼쪽메뉴 -->
 				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-4">
 					<div class="p-4">사용자 관리</div>
 					<section class="manager-content">

@@ -26,8 +26,9 @@
 			html, body {height: 100%;min-height: 100% !important; background-color:#F7F7F7}
 		</style>
 		<script type="text/javascript">
-			// leftnav include
+			// header, leftnav include
 			$(document).ready(function(){
+				$("#navbar-manager").load("navbar-manager.html");
 				$("#navbar-manager-left").load("navbar-manager-left.html");
 			});
 		</script>
@@ -109,33 +110,7 @@
 			</div>
 		</div>
 		<!--// Modal 년도 수정 -->
-
-
-		<nav class="navbar navbar-manager p-3">
-			<a class="navbar-brand" href="index.html">LABY University</a>
-			<!-- admin info -->
-			<div class="dropdown">
-				<span class="text-s">현재 <span class="text-blue">2021년</span> 강좌로 설정되어 있습니다.</span>
-				<a class="btn text-s" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					<img src="../public/images/icon/user.png" class="mr-1" />
-					<span>홍길동 (prof)</span>
-				</a>
-				<ul class="dropdown-menu dropdown-menu-xl-right text-s p-3" aria-labelledby="dropdownMenuLink" style="width: 225px;">
-					<li class="mb-1">
-						<i class="fas fa-user mr-2 text-mute"></i>홍길동 (honggildong-1234)
-					</li>
-					<li class="mb-1">
-						<i class="fas fa-envelope mr-2 text-mute"></i>gildonghong@cnue.ac.kr
-					</li>
-					<li>
-						<i class="fas fa-link mr-1 text-mute"></i>
-						<a href="" class="btn btn-light-laby btn-xs">CMS바로가기</a>
-						<a href="" class="btn btn-light-laby btn-xs">Logout</a>
-					</li>
-				</ul>
-			</div>
-			<!-- // admin info end -->
-		</nav>
+		<div id="navbar-manager"></div>
 		<div class="container-fluid" style="height:100%">
 			<div class="row" style=" height:100%">
 				<!-- 왼쪽메뉴 -->
@@ -160,16 +135,63 @@
 										<span>대분류 목록</span>
 										<span><a href="" class="btn btn-blue">+ 추가</a></span>
 									</li>
-									<li class="list-group-item" style="min-height:300px;">
-										
+									<li class="list-group-item" style="min-height:400px;">
+										<ul class="list-group list-group-flush font-light">
+											<li class="list-group-item -action active d-flex justify-content-between">
+												인공지능 (11)
+												<span class="btn-group" role="group" aria-label="Basic example">
+													<a href="" class="btn btn-s btn-light-laby">수정</a>
+													<a href="" class="btn btn-s btn-light-laby">삭제</a>
+												</span>
+											</li>
+											<li class="list-group-item list-group-item-action d-flex justify-content-between">
+												데이터사이언스 (123)
+												<span class="btn-group" role="group" aria-label="Basic example">
+													<a href="" class="btn btn-s btn-light-laby">수정</a>
+													<a href="" class="btn btn-s btn-light-laby">삭제</a>
+												</span>
+											</li>
+											<li class="list-group-item list-group-item-action d-flex justify-content-between">
+												빅데이터 (9)
+												<span class="btn-group" role="group" aria-label="Basic example">
+													<a href="" class="btn btn-s btn-light-laby">수정</a>
+													<a href="" class="btn btn-s btn-light-laby">삭제</a>
+												</span>
+											</li>
+											<li class="list-group-item list-group-item-action d-flex justify-content-between">
+												사이버시큐리티 (789)
+												<span class="btn-group" role="group" aria-label="Basic example">
+													<a href="" class="btn btn-s btn-light-laby">수정</a>
+													<a href="" class="btn btn-s btn-light-laby">삭제</a>
+												</span>
+											</li>
+										</ul>
 									</li>
 								</ul>								  
 							</div>
 							<div class="col-6">
 								<ul class="list-group">
-									<li class="list-group-item">상세분류 목록</li>
-									<li class="list-group-item" style="min-height:300px;">
-										123	
+									<li class="list-group-item d-flex justify-content-between align-items-center">
+										<span>상세분류 목록</span>
+										<span><a href="" class="btn btn-blue">+ 추가</a></span>
+									</li>
+									<li class="list-group-item" style="min-height:400px;">
+										<ul class="list-group list-group-flush font-light">
+											<li class="list-group-item list-group-item-action d-flex justify-content-between">
+												컴퓨터 인공지능 (10)
+												<span class="btn-group" role="group" aria-label="Basic example">
+													<a href="" class="btn btn-s btn-light-laby">수정</a>
+													<a href="" class="btn btn-s btn-light-laby">삭제</a>
+												</span>
+											</li>
+											<li class="list-group-item list-group-item-action active d-flex justify-content-between">
+												AI 인공지능 (1)
+												<span class="btn-group" role="group" aria-label="Basic example">
+													<a href="" class="btn btn-s btn-light-laby">수정</a>
+													<a href="" class="btn btn-s btn-light-laby">삭제</a>
+												</span>
+											</li>
+										</ul>
 									</li>
 								</ul>	
 							</div>
