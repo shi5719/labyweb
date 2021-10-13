@@ -671,6 +671,37 @@ footer p {
       border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   }
 }
+/* 파일확장자표시 */
+.file-excel {
+  color: #28a745;
+  border:1px solid #28a745;
+  background-color: #fff;
+  font-size:14px; font-weight: 100;
+}
+.file-hwp, .file-docx, .file-word {
+  color: #007bff;
+  border:1px solid #007bff;
+  background-color: #fff;
+  font-size:14px; font-weight: 100;
+}
+.file-ppt {
+  color: #dc3545;
+  border:1px solid #dc3545;
+  background-color: #fff;
+  font-size:14px; font-weight: 100;
+}
+.file-zip {
+  color: #ffc107;
+  border:1px solid #ffc107;
+  background-color: #fff;
+  font-size:14px; font-weight: 100;
+}
+.file-txt, .file-img, .file-video,.file-etc {
+  color: #6c757d;
+  border:1px solid #6c757d;
+  background-color: #fff;
+  font-size:14px; font-weight: 100;
+}
 
 .badge-onair {border: 1px solid #EB5757;
   box-sizing: border-box;

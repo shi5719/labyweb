@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags-->
+		<meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1,user-scalable=no" />
+		<title>LABYWEB Admin</title>
+        <!-- Core -->
+        <link rel="stylesheet" href="../public/vendor/jquery-ui-1.12.1/jquery-ui.css" type="text/css" />
+        <link rel="stylesheet" href="../public/vendor/bootstrap-4.5.3/css/bootstrap.css" type="text/css"/>
+        <link rel="stylesheet" href="../public/vendor/fontawesome-free-5.15.2/css/all.css"/> <!-- font -->
+        <script src="../public/js/jquery-3.5.1.js"></script>  
+        <script src="../public/js/popper.min.js" type="text/javascript"></script>
+        <script src="../public/vendor/jquery-ui-1.12.1/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="../public/vendor/bootstrap-4.5.3/js/bootstrap.js" type="text/javascript"></script>
+        <script src="../public/vendor/fontawesome-free-5.15.2/js/all.js" type="text/javascript"></script>
+        <!-- External -->
+        <!-- icheck -->
+        <link rel="stylesheet" href="../public/vendor/icheck-material-master/icheck-material.css" type="text/css" /> <!-- chkbox, radiobtn -->
+		<!-- chart -->
+		<script src="../public/vendor/Chart.js-2.9.4/dist/Chart.bundle.js"></script>
+        <!-- Laby -->
+        <link rel="stylesheet" href="../public/css/common.css" type="text/css" /> <!-- common -->
+		<style>
+			html {height: 100%;}
+			html, body {height: 100%;min-height: 100% !important; background-color:#F7F7F7}
+		</style>
+		<script type="text/javascript">
+			// header, leftnav include
+			$(document).ready(function(){
+				$("#navbar-manager").load("navbar-manager.html");
+				$("#navbar-manager-left").load("navbar-manager-left.html");
+			});
+		</script>
+	</head>
+	<body>
+		<div id="navbar-manager"></div><!-- header -->
+		<div class="container-fluid" style="height:100%">
+			<div class="row" style=" height:100%">
+				<!-- 왼쪽메뉴 -->
+				<div class="col-md-3 col-lg-2 p-0">
+					<div id="navbar-manager-left"></div>
+				</div>
+				<!--// 왼쪽메뉴 -->
+				<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-md-2">
+					<div class="p-4">통계 > <span class="text-v">로그인 상세</span></div>
+					<section class="manager-content">
+						<div class="form-inline mb-3">
+							<div class="w-50 float-left">
+								<a href="" class="btn btn-light-laby mr-1"><i class="fas fa-arrow-down"></i> EXCEL 다운로드</a>
+							</div>
+							<div class="w-50 float-right text-right">
+								<select class="form-control" id="contents_view">
+									<option selected>50개씩 보기</option>
+									<option value="1">100개씩 보기</option>
+									<option value="2">200개씩 보기</option>
+								</select>
+							</div>
+							<div style="clear:both"></div>
+						</div>
+						<table class="table font-light">
+							<thead class="text-center">
+							<tr>
+								<th width="10%">사용자</th>
+								<th width="10%">접속시간</th>
+								<th width="10%">접속종료</th>
+								<th width="10%">IP</th>
+								<th width="10%">접속기기</th>
+								<th>상세정보</th>
+							</tr>
+							</thead>
+							<tbody class="text-center font-14">
+							<tr>
+								<td>sahyein(사혜인)</td>
+								<td>2021-10-12 17:21:18</td>
+								<td></td>
+								<td>220.70.12.77</td>
+								<td>PC</td>
+								<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36</td>
+							</tr>
+							<tr>
+								<td>sahyein(사혜인)</td>
+								<td>2021-10-12 17:21:18</td>
+								<td>2021-10-12 17:21:18</td>
+								<td>220.70.12.77</td>
+								<td>PC</td>
+								<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36</td>
+							</tr>
+							<tr>
+								<td>sahyein(사혜인)</td>
+								<td>2021-10-12 17:21:18</td>
+								<td>2021-10-12 17:21:18</td>
+								<td>220.70.12.77</td>
+								<td>PC</td>
+								<td>Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36</td>
+							</tr>
+							</tbody>
+						</table>
+						<!-- paging -->
+						<div class="paging-labyweb">
+							<a href=""><span class="pageUpDown"><i class="fas fa-angle-double-left"></i></span></a>
+							<a href=""><span class="pageUpDown"><i class="fas fa-angle-left"></i></span></a>
+							<a href=""><span class="page">1</span></a>
+							<a href=""><span class="current">2</span></a>
+							<a href=""><span class="page">3</span></a>
+							<a href=""><span class="page">4</span></a>
+							<a href=""><span class="page">5</span></a>
+							<a href=""><span class="page">6</span></a>
+							<a href=""><span class="page">7</span></a>
+							<a href=""><span class="page">8</span></a>
+							<a href=""><span class="pageUpDown"><i class="fas fa-angle-right"></i></span></a>
+							<a href=""><span class="pageUpDown"><i class="fas fa-angle-double-right"></i></span></a>
+						</div>
+						<!--// paging -->
+					</section>
+				</main>
+			</div><!--// row -->
+		</div><!--// container-fluid -->
+  	</body>
+</html>
