@@ -282,7 +282,7 @@ header {width:100%; box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);}
 main {z-index:1}
 .bg-nav{width:100%; padding:30px 0; border-bottom:1px solid #E5E5E5; background-color:#F9FAFB}
 .bg-nav .nav-link {font-family: "NotoKrL";}
-.bg-nav .nav .arrow {margin-top:13px; color:#BDBDBD}
+.bg-nav .nav-arrow {margin-top:11px; color:#BDBDBD}
 .bg-nav .nav-link.active {font-family: "NotoKrR"}
 .bg-nav2 {width:100%; height:180px; border-bottom:1px solid #E5E5E5; background-color:#F9FAFB}
 footer {background-color: #F9FAFB; height:220px;
@@ -672,35 +672,52 @@ footer p {
   }
 }
 /* 파일확장자표시 */
-.file-excel {
+.file-xls, .file-xlsx {
   color: #28a745;
   border:1px solid #28a745;
   background-color: #fff;
-  font-size:14px; font-weight: 100;
+  font-size:12px; font-weight: 100;opacity: 0.65;
 }
-.file-hwp, .file-docx, .file-word {
+.file-hwp, .file-word {
   color: #007bff;
   border:1px solid #007bff;
   background-color: #fff;
-  font-size:14px; font-weight: 100;
+  font-size:12px; font-weight: 100;opacity: 0.65;
 }
-.file-ppt {
+.file-doc, .file-docx {
+  color: #17a2b8;
+  border:1px solid #17a2b8;
+  background-color: #fff;
+  font-size:12px; font-weight: 100;opacity: 0.65;
+}
+.file-ppt, .file-pptx, .file-pdf {
   color: #dc3545;
   border:1px solid #dc3545;
   background-color: #fff;
-  font-size:14px; font-weight: 100;
+  font-size:12px; font-weight: 100;opacity: 0.65;
 }
 .file-zip {
   color: #ffc107;
   border:1px solid #ffc107;
   background-color: #fff;
-  font-size:14px; font-weight: 100;
+  font-size:12px; font-weight: 100;opacity: 0.65;
 }
-.file-txt, .file-img, .file-video,.file-etc {
+.file-mp4, .file-wmv, .file-avi {
+  color: #6f42c1;
+  border:1px solid #6f42c1;
+  background-color: #fff;
+  font-size:12px; font-weight: 100;opacity: 0.65;
+}
+.file-txt, .file-jpg, .file-jpeg, .file-png, .file-gif {
   color: #6c757d;
   border:1px solid #6c757d;
   background-color: #fff;
-  font-size:14px; font-weight: 100;
+  font-size:12px; font-weight: 100;opacity: 0.65;
+}
+.file-etc {color: #ccc;
+border:1px solid #ccc;
+background-color: #fff;
+font-size:12px; font-weight: 100;opacity: 0.65;
 }
 
 .badge-onair {border: 1px solid #EB5757;
